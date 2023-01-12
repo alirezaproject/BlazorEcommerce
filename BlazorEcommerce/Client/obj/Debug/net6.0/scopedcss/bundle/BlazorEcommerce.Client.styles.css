@@ -41,6 +41,10 @@
 .btn-delete:hover[b-3b5rf2ockk] {
     text-decoration: underline;
 }
+
+.input-quantity[b-3b5rf2ockk] {
+    width: 70px;
+}
 /* /Pages/ProductDetails.razor.rz.scp.css */
 .media-img[b-0l6p78lwiq]
 {
