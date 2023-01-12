@@ -1,0 +1,28 @@
+.media-img[b-0l6p78lwiq]
+{
+    max-height: 500px;
+    max-width: 500px;
+    border-radius: 6px;
+    margin: 0 10px 10px 10px;
+}
+
+.media-img-wrapper[b-0l6p78lwiq]
+{
+    max-width: 500px;
+    max-height: 500px;
+    text-align: center;
+}
+
+@media (max-width: 1023.98px)
+{
+    .media-img[b-0l6p78lwiq]
+    {
+        max-width: 300px;
+    }
+
+    .media-img-wrapper[b-0l6p78lwiq]
+    {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Projects\\.Net Core\\BlazorEcommerce\\BlazorEcommerce\\Client\\BlazorEcommerce.Client.csproj": {}
+  },
+  "projects": {
+    "F:\\Projects\\.Net Core\\BlazorEcommerce\\BlazorEcommerce\\Client\\BlazorEcommerce.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Projects\\.Net Core\\BlazorEcommerce\\BlazorEcommerce\\Client\\BlazorEcommerce.Client.csproj",
+        "projectName": "BlazorEcommerce.Client",
+        "projectPath": "F:\\Projects\\.Net Core\\BlazorEcommerce\\BlazorEcommerce\\Client\\BlazorEcommerce.Client.csproj",
+        "packagesPath": "C:\\Users\\sheko\\.nuget\\packages\\",
+        "outputPath": "F:\\Projects\\.Net Core\\BlazorEcommerce\\BlazorEcommerce\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sheko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Projects\\.Net Core\\BlazorEcommerce\\BlazorEcommerce\\Shared\\BlazorEcommerce.Shared.csproj": {
+                "projectPath": "F:\\Projects\\.Net Core\\BlazorEcommerce\\BlazorEcommerce\\Shared\\BlazorEcommerce.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "F:\\Projects\\.Net Core\\BlazorEcommerce\\BlazorEcommerce\\Shared\\BlazorEcommerce.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Projects\\.Net Core\\BlazorEcommerce\\BlazorEcommerce\\Shared\\BlazorEcommerce.Shared.csproj",
+        "projectName": "BlazorEcommerce.Shared",
+        "projectPath": "F:\\Projects\\.Net Core\\BlazorEcommerce\\BlazorEcommerce\\Shared\\BlazorEcommerce.Shared.csproj",
+        "packagesPath": "C:\\Users\\sheko\\.nuget\\packages\\",
+        "outputPath": "F:\\Projects\\.Net Core\\BlazorEcommerce\\BlazorEcommerce\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sheko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
