@@ -1,0 +1,38 @@
+﻿@page "/register"
+
+<MainTitle Title="Register"></MainTitle>
+
+<h3>Register</h3>
+
+<EditForm Model="_user" OnValidSubmit="HandleRegisteration">
+    <DataAnnotationsValidator />
+    <div class="mb-3 ">
+        <label for="email">Email</label>
+        <InputText id="email" @bind-Value="_user.Email" class="form-control"/>
+        <ValidationMessage For="() => _user.Email"/>
+    </div>
+    <div class="mb-3 ">
+        <label for="password">Password</label>
+        <InputText id="password" @bind-Value="_user.Password" class="form-control"/>
+        <ValidationMessage For="() => _user.Password" />
+    </div>
+    <div class="mb-3 ">
+        <label for="confirm-password">Confirm Password</label>
+        <InputText id="confirm-password" @bind-Value="_user.ConfirmPassword" class="form-control"/>
+        <ValidationMessage For="() => _user.ConfirmPassword" />
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+    @*
+    <ValidationSummary />
+    *@
+</EditForm>
+
+@code
+{
+    private UserRegister _user = new UserRegister();
+
+    void HandleRegisteration()
+    {
+        Console.WriteLine($"Register User With the Email {_user.Email}");
+    }
+}

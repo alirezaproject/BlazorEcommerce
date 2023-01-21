@@ -1,26 +1,39 @@
-using BlazorEcommerce.Server.Services.CartService;
-using Microsoft.AspNetCore.Cors.Infrastructure;
-using Microsoft.AspNetCore.ResponseCompression;
-using Microsoft.OpenApi.Models;
+using System.Reflection;
+using Autofac.Extensions.DependencyInjection;
+using BlazorEcommerce.Server;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+
 
 // Add services to the container.
 builder.Services.AddDbContext<DataBaseContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-    
 });
 
-builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
+builder.Services.AddControllers().AddApplicationPart(AssemblyRefrence.Assembly);
+
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(); ;
+builder.Services.AddRazorPages();
+builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped<ICartService, CartService>();
+
+//builder.Services.AddScoped<IProductService, ProductService>();
+//builder.Services.AddScoped<ICategoryService, CategoryService>();
+//builder.Services.AddScoped<ICartService, CartService>();
+
+builder
+    .Services
+    .Scan(s =>
+        s
+            .FromAssemblies(AssemblyRefrence.Assembly)
+            .AddClasses(false)
+            .AsImplementedInterfaces()
+            .WithScopedLifetime());
 
 var app = builder.Build();
 
@@ -38,10 +51,7 @@ else
 
 app.UseStaticFiles();
 app.UseSwagger();
-app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Blazor Ecommerce V1");
-});
+app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Blazor Ecommerce V1"); });
 
 app.UseHttpsRedirection();
 

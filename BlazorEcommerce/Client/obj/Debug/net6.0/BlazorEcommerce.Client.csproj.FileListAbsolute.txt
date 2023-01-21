@@ -837,3 +837,5 @@ F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\sc
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ProductList.razor.rz.scp.css
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ShopLayout.razor.rz.scp.css
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ShopNavMenu.razor.rz.scp.css
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\Register.razor.rz.scp.css
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\UserButton.razor.rz.scp.css

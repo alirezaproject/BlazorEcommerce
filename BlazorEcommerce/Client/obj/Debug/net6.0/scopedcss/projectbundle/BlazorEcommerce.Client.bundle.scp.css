@@ -74,6 +74,7 @@
         height: auto;
     }
 }
+/* /Pages/Register.razor.rz.scp.css */
 /* /Shared/FeaturedProducts.razor.rz.scp.css */
 .container[b-mkldjm4yjh] {
     display: flex;
@@ -460,3 +461,20 @@ main[b-eyye3xe6ci]
         display: block;
     }
 }
+/* /Shared/UserButton.razor.rz.scp.css */
+.show-menu[b-l31arl77u2] {
+    display: block;
+}
+
+.user-button[b-l31arl77u2] {
+    margin-left: .5em;
+}
+
+.top-row a[b-l31arl77u2] {
+    margin-left: 0;
+}
+
+.dropdown-item:hover[b-l31arl77u2] {
+    background-color: white;
+}
+
