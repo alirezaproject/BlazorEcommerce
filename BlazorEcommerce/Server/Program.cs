@@ -1,6 +1,4 @@
-using System.Reflection;
 using Autofac.Extensions.DependencyInjection;
-using BlazorEcommerce.Server;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +12,7 @@ builder.Services.AddDbContext<DataBaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-builder.Services.AddControllers().AddApplicationPart(AssemblyRefrence.Assembly);
+builder.Services.AddControllers();
 
 
 builder.Services.AddEndpointsApiExplorer();
@@ -22,18 +20,10 @@ builder.Services.AddRazorPages();
 builder.Services.AddSwaggerGen();
 
 
-//builder.Services.AddScoped<IProductService, ProductService>();
-//builder.Services.AddScoped<ICategoryService, CategoryService>();
-//builder.Services.AddScoped<ICartService, CartService>();
-
-builder
-    .Services
-    .Scan(s =>
-        s
-            .FromAssemblies(AssemblyRefrence.Assembly)
-            .AddClasses(false)
-            .AsImplementedInterfaces()
-            .WithScopedLifetime());
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
 

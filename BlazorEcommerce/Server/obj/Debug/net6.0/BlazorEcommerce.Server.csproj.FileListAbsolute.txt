@@ -93,3 +93,5 @@ F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Server\bin\Debug\net6.0\Au
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Server\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Server\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Server\bin\Debug\net6.0\Scrutor.dll
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Server\bin\Debug\net6.0\Humanizer.dll
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll

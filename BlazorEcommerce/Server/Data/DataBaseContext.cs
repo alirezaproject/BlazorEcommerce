@@ -11,9 +11,6 @@ public class DataBaseContext : DbContext
         modelBuilder.Entity<ProductVariant>()
             .HasKey(p => new { p.ProductId, p.ProductTypeId });
 
-        modelBuilder.Entity<ProductVariant>()
-            .HasKey(p => new { p.ProductId, p.ProductTypeId });
-
         #region Product Type
 
         modelBuilder.Entity<ProductType>().HasData(
@@ -298,4 +295,5 @@ public class DataBaseContext : DbContext
     public DbSet<Category> Categories { get; set; } = null!;
     public DbSet<ProductType> ProductTypes { get; set; } = null!;
     public DbSet<ProductVariant> ProductVariants { get; set; } = null!;
+    public DbSet<User> Users { get; set; } = null!;
 }

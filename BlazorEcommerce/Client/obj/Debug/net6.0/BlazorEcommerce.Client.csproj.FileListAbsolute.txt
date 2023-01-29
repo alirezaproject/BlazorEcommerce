@@ -839,3 +839,11 @@ F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\sc
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ShopNavMenu.razor.rz.scp.css
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\Register.razor.rz.scp.css
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\UserButton.razor.rz.scp.css
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.DependencyModel.dll
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\Scrutor.dll
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\Scrutor.dll.gz
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.DependencyModel.dll.gz
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\Scrutor.dll
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\wYlSnv8H.gz
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\6CoxfOMK.gz
