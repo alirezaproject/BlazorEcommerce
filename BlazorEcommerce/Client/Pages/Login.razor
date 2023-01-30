@@ -1,0 +1,51 @@
+﻿@page "/login"
+@inject IAuthService AuthService
+@inject ILocalStorageService LocalStorage
+@inject NavigationManager NavigationManager
+
+<MainTitle Title="ورود به سایت"></MainTitle>
+
+<h3>Login</h3>
+
+<EditForm Model="_user" OnValidSubmit="HandleLogin">
+    <DataAnnotationsValidator />
+    <div class="mb-3 ">
+        <label for="email">Email</label>
+        <InputText id="email" @bind-Value="_user.Email" class="form-control" />
+        <ValidationMessage For="() => _user.Email" />
+    </div>
+    <div class="mb-3 ">
+        <label for="password">Password</label>
+        <InputText type="password" id="password" @bind-Value="_user.Password" class="form-control" />
+        <ValidationMessage For="() => _user.Password" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+
+
+</EditForm>
+
+<div class="text-danger">
+    <span>@_errorMessage</span>
+</div>
+
+@code {
+    private readonly UserLogin _user = new();
+    private string _errorMessage = string.Empty;
+
+    private async Task HandleLogin()
+    {
+        var result = await AuthService.Login(_user);
+        if (result.Success)
+        {
+            _errorMessage = string.Empty;
+            await LocalStorage.SetItemAsync("authToken", result.Data);
+            NavigationManager.NavigateTo("");
+        }
+        else
+        {
+            _errorMessage = result.Message;
+        }
+    }
+
+}

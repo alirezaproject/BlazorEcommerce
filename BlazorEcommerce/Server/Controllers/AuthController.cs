@@ -1,33 +1,45 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BlazorEcommerce.Server.Controllers
+namespace BlazorEcommerce.Server.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+public class AuthController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AuthController : ControllerBase
+    private readonly IAuthService _authService;
+
+    public AuthController(IAuthService authService)
     {
-        private readonly IAuthService _authService;
+        _authService = authService;
+    }
 
-        public AuthController(IAuthService authService)
+    [HttpPost("register")]
+    public async Task<IActionResult> Register(UserRegister request)
+    {
+        var response = await _authService.Register(new User()
         {
-            _authService = authService;
+            Email = request.Email
+        },request.Password);
+
+        if (!response.Success)
+        {
+            return BadRequest(response);
         }
 
-        [HttpPost("register")]
-        public async Task<IActionResult> Register(UserRegister request)
+        return Ok(response);
+    }
+
+    [HttpPost("login")]
+    public async Task<IActionResult> Login(UserLogin request)
+    {
+        var response = await _authService.Login(request.Email, request.Password);
+
+        if (!response.Success)
         {
-            var response = await _authService.Register(new User()
-            {
-                Email = request.Email
-            },request.Password);
-
-            if (!response.Success)
-            {
-                return BadRequest(response);
-            }
-
-            return Ok(response);
+            return BadRequest(response);
         }
+
+        return Ok(response);
     }
 }
