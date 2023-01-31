@@ -6,3 +6,4 @@ global using BlazorEcommerce.Client;
 global using Blazored.LocalStorage;
 global using BlazorEcommerce.Client.Services.CartService;
 global using BlazorEcommerce.Client.Services.AuthService;
+global using Microsoft.AspNetCore.Components.Authorization;

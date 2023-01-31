@@ -95,3 +95,5 @@ F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Server\bin\Debug\net6.0\Mi
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Server\bin\Debug\net6.0\Scrutor.dll
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Server\bin\Debug\net6.0\Humanizer.dll
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

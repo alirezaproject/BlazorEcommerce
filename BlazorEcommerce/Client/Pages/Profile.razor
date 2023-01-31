@@ -1,0 +1,40 @@
+﻿@page "/profile"
+@inject IAuthService AuthService
+@attribute [Authorize]
+
+<AuthorizeView>
+    <h3>Hi ! Your're logged in with <i>@context.User.Identity!.Name</i>.</h3>
+
+</AuthorizeView>
+
+<h5> Change Password</h5>
+
+<EditForm Model="_request" OnValidSubmit="ChangePassword">
+    <DataAnnotationsValidator />
+    <div class="mb-3 ">
+        <label for="password">Password</label>
+        <InputText type="password" id="password" @bind-Value="_request.Password" class="form-control" />
+        <ValidationMessage For="() => _request.Password" />
+    </div>
+    <div class="mb-3 ">
+        <label for="confirm-password">Confirm Password</label>
+        <InputText type="password" id="confirm-password" @bind-Value="_request.ConfirmPassword" class="form-control" />
+        <ValidationMessage For="() => _request.ConfirmPassword" />
+    </div>
+    <button type="submit" class="btn btn-primary">Apply</button>
+
+</EditForm>
+
+@_message
+
+@code {
+    private readonly UserChangePassword _request = new();
+
+    string _message = string.Empty;
+
+    private async Task ChangePassword()
+    {
+        var result = await AuthService.ChangePassword(_request);
+        _message = result.Message;
+    }
+}

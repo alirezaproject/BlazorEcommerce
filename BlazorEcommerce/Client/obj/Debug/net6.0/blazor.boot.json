@@ -8,12 +8,14 @@
   "resources": {
     "assembly": {
       "Blazored.LocalStorage.dll": "sha256-Jq\/dS58mO5wtL2d0x\/FeAdDZ1bUTpTzPODJpBZUre\/4=",
-      "Microsoft.AspNetCore.Authorization.dll": "sha256-XBf6Fkkj3RbYzEYJK50myG8AEUvn0E0yo79DWqFFF6s=",
-      "Microsoft.AspNetCore.Components.dll": "sha256-UkZxt\/OLN+4go5yeFeBuXEx05BEm9nw5pNpR7smgtq4=",
+      "Microsoft.AspNetCore.Authorization.dll": "sha256-mU8wXrw1NaAfoswi7J10exqtK90y6UBTDA8jt1T84BQ=",
+      "Microsoft.AspNetCore.Components.dll": "sha256-VEJzgKvwGbPm2I+rYbqDt\/Ret+PXbgWB8pBkqxAHjz4=",
+      "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-Bw9kE1kQAHNObctlMFztUmBJDOaKktl53oTSasgi7Hk=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-Tb2pZ0EzhqIJ5HZiejbBy3MBrA+zY+77w58Gae1c0pQ=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-SuNk6pu0VYvOrLD8o4+xeB+eHRkkv0mHCl4LKVRg8u8=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-iFHifhevHZX+xH2Yvy\/NOtvEAaDO3UmaXwyup\/g32Ak=",
-      "Microsoft.AspNetCore.Metadata.dll": "sha256-3TE7F3H4g8o6S+SpkGTHlSmBCMvOi8GcBNHZIGLPg8s=",
+      "Microsoft.AspNetCore.Metadata.dll": "sha256-On8JxTYoJyxolxI6M57Tot3R89NA4p9nyELBQGkQcv0=",
+      "Microsoft.AspNetCore.WebUtilities.dll": "sha256-D5akJeBd7NNITuzAXxlX7zl2jfsc4uTKyeEKwwNhqoo=",
       "Microsoft.Extensions.Configuration.dll": "sha256-c8yYhfrOBLEnOBglLTu9peXSbJDwFpuT4UQiXSv28Og=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-5Otet+KKVUjNkE\/hqcNWmt75H1K2VNuKPFagpRd6Ces=",
       "Microsoft.Extensions.Configuration.Binder.dll": "sha256-wNKhG3Ovx8jqxbscz2AALlsTLfI6GL2dyDhe63mSsoM=",
@@ -31,6 +33,7 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-jOmoWSfsdQexH\/6QCA56gR1RMEqeix2iDDUBWbpAOQI=",
       "Microsoft.JSInterop.dll": "sha256-8rJkvKxV\/xke9flVSby3wXsdofRAr9AzsMeVjUmVAMo=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-9Kkxpe\/nXXP3FmowCjDeA4p54SbRWz0G1d0lfgRni0c=",
+      "Microsoft.Net.Http.Headers.dll": "sha256-P66ftDrXwc6ayND8uYzIk0CPQy1GjNZAPHx9RMhi3V4=",
       "Scrutor.dll": "sha256-wWyn3OXTe50P7iT4fuBYdnFVRTA5lJSpLLdeDqs2w\/4=",
       "System.IO.Pipelines.dll": "sha256-6+E55JXedimdw1c1bDtVg4K7XuWjVWVTifH8QpfzXSY=",
       "Microsoft.CSharp.dll": "sha256-g19VGs7fPjYMcCLlDjFJVrJoJzKFHq4bh4PV+LYyaEI=",
@@ -199,15 +202,15 @@
       "mscorlib.dll": "sha256-KqZqU1imWCwJ9UPDElyoolN8s7Yqhjk67wuOohFN5KA=",
       "netstandard.dll": "sha256-kBK\/QJy7\/skP97jqnvXnOFMrhWS8HZ1bsADFK\/gZkyM=",
       "System.Private.CoreLib.dll": "sha256-3webPuyNUXfAFKY5c1tC\/jBVrjZHelBwvXrr1E9VJuk=",
-      "BlazorEcommerce.Shared.dll": "sha256-pshlKNAOeskZxgmXsdGGuV66CoqHPV0Wrqsx+h+95Iw=",
-      "BlazorEcommerce.Client.dll": "sha256-jkPQr+Lj47y7yDG8X5lYmgXh\/3z5qyayksI09Yy6h4k="
+      "BlazorEcommerce.Shared.dll": "sha256-rfWTT3nY01koH8roFI6EvCqGohszJwvAEh+G2Uj\/tlk=",
+      "BlazorEcommerce.Client.dll": "sha256-5H0INtBH\/nau3XYydTLbwLaQZ36hbB1\/cfIS6hNTPwk="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "BlazorEcommerce.Shared.pdb": "sha256-sJKnEL5RBPjSZyyb2Qb\/7PBdqawLFVO3Wh4UA92bees=",
-      "BlazorEcommerce.Client.pdb": "sha256-RjYmZTogC9sCtWzP3274ADTz+2M+EPxx\/nwIdl9Xo7s="
+      "BlazorEcommerce.Shared.pdb": "sha256-rJ0VioHNN6OxE+olYtbAQjgoY0joQ4oh0h4z5go9CLE=",
+      "BlazorEcommerce.Client.pdb": "sha256-j5ahJWiXtZzMquhEm3HmhOIPcRSTub7cBeRyYlHRxDM="
     },
     "runtime": {
       "dotnet.6.0.13.mz549ijgd6.js": "sha256-X\/515F1HEzgsDZdY8BJjt8YUwrWngHGZkMnpClhsrpY=",
