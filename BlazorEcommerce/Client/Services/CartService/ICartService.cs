@@ -6,8 +6,10 @@ public interface ICartService
 {
     event Action OnChanged;
     Task AddToCartAsync(CartItem cartItem);
-    Task<List<CartItem>> GetCartItemsAsync();
+//    Task<List<CartItem>> GetCartItemsAsync();
     Task<List<CartProductResponse>> GetCartProductsAsync();
     Task RemoveProductFromCart(int productId,int productTypeId);
     Task UpdateQuantity(CartProductResponse product);
+    Task StoreCartItems(bool emptyLocalCart);
+    Task GetCartItemsCount();
 }
