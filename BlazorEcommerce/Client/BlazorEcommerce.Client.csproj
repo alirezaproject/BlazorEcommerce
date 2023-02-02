@@ -35,6 +35,7 @@
 
   <ItemGroup>
     <Folder Include="Services\AuthService\" />
+    <Folder Include="Services\OrderService\" />
   </ItemGroup>
 
 </Project>
