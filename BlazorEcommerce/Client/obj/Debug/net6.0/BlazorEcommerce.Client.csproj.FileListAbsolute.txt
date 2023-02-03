@@ -860,3 +860,4 @@ F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\Mi
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\zcLwZAr7.gz
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\C1DA13rt.gz
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\Orders.razor.rz.scp.css
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\OrderDetails.razor.rz.scp.css

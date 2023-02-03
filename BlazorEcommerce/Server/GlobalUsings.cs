@@ -6,3 +6,4 @@ global using BlazorEcommerce.Server.Services.CategoryService;
 global using BlazorEcommerce.Server.Services.AuthService;
 global using BlazorEcommerce.Server.Services.CartService;
 global using BlazorEcommerce.Server.Services.OrderService;
+global using BlazorEcommerce.Server.Services.PaymentService;

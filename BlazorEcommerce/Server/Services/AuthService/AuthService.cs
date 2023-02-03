@@ -85,6 +85,9 @@ public class AuthService : IAuthService
     public int GetUserId() =>
         int.Parse(_httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.NameIdentifier)!);
 
+    public string GetUserEmail() => _httpContextAccessor.HttpContext?.User.Identity?.Name!;
+    
+
     private string? CreateToken(User user)
     {
         var claim = new List<Claim>
