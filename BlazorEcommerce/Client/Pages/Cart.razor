@@ -1,6 +1,7 @@
 ﻿@page "/cart"
 @inject ICartService CartService
 @inject IOrderService OrderService
+@inject IAuthService AuthService
 
 <MainTitle Title="سبد خرید"></MainTitle>
 
@@ -8,7 +9,7 @@
 {
     <span>@_message</span>
 }
-else if (orderPlaced)
+else if (_orderPlaced)
 {
     <span>Thank you for your order ! you can check your orders <a href="orders">here</a></span>
 }
@@ -35,6 +36,13 @@ else
             Total (@CartProduct.Count) : $@CartProduct.Sum(product => product.Price * product.Quantity)
         </div>
     </div>
+    @if (_isAuthenticated)
+    {
+        <div>
+            <h5>Delivery Address</h5>
+            <AddressForm/>
+        </div>
+    }
     <button @onclick="PlaceOrder" class="btn alert-success float-end mt-1">Place Order</button>
 }
 
@@ -43,11 +51,13 @@ else
 
     public List<CartProductResponse> CartProduct { get; set; } = new();
     private string _message = "Loading Cart ...";
-    bool orderPlaced = false;
+    bool _orderPlaced;
+    bool _isAuthenticated;
 
     protected override async Task OnInitializedAsync()
     {
-        orderPlaced = false;
+        _isAuthenticated =await AuthService.IsUserAuthenticated();
+        _orderPlaced = false;
         await LoadCart();
     }
 
@@ -84,6 +94,6 @@ else
     {
         await OrderService.PlaceOrder();
         await CartService.GetCartItemsCount();
-        orderPlaced = true;
+        _orderPlaced = true;
     }
 }
