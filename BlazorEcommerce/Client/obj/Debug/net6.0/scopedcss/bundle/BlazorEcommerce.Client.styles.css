@@ -1,3 +1,29 @@
+/* /Pages/Admin/Categories.razor.rz.scp.css */
+.big-checkbox[b-puhdt2637c] {
+    transform: scale(2, 2);
+}
+
+.header[b-puhdt2637c] {
+    display: flex;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+}
+
+.row[b-puhdt2637c] {
+    display: flex;
+    padding: 6px;
+}
+
+.col[b-puhdt2637c] {
+    flex: 1;
+}
+
+.col-visible[b-puhdt2637c] {
+    text-align: center;
+}
 /* /Pages/Cart.razor.rz.scp.css */
 .container[b-3b5rf2ockk]
 {
@@ -132,6 +158,17 @@
     }
 }
 /* /Pages/Register.razor.rz.scp.css */
+/* /Shared/AdminMenu.razor.rz.scp.css */
+
+.top-row a[b-1zvt91rzix]
+{
+    margin-left: 0 !important;
+}
+
+.dropdown-item:hover[b-1zvt91rzix]
+{
+    background-color: white;
+}
 /* /Shared/FeaturedProducts.razor.rz.scp.css */
 .container[b-mkldjm4yjh] {
     display: flex;

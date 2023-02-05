@@ -25,7 +25,7 @@ public class AuthService : IAuthService
             return new ServiceResponse<int>() { Success = false, Message = "User already exists." };
         }
 
-        CreatePasswordHash(password, out byte[] passwordHash, out byte[] passwordSalt);
+        CreatePasswordHash(password, out var passwordHash, out var passwordSalt);
 
         user.PasswordHash = passwordHash;
         user.PasswordSalt = passwordSalt;
@@ -93,7 +93,8 @@ public class AuthService : IAuthService
         var claim = new List<Claim>
         {
             new(ClaimTypes.NameIdentifier, user.Id.ToString()),
-            new(ClaimTypes.Name, user.Email)
+            new(ClaimTypes.Name, user.Email),
+            new(ClaimTypes.Role,user.Role)
         };
 
         var key = new SymmetricSecurityKey(

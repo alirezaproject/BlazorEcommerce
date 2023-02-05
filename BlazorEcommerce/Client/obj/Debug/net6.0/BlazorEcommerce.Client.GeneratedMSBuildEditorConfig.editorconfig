@@ -64,6 +64,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/Projects/.Net Core/BlazorEcommerce/BlazorEcommerce/Client/Pages/Admin/Categories.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcmllcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-puhdt2637c
+
 [F:/Projects/.Net Core/BlazorEcommerce/BlazorEcommerce/Client/Pages/Cart.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-3b5rf2ockk
@@ -83,6 +87,10 @@ build_metadata.AdditionalFiles.CssScope = b-0l6p78lwiq
 [F:/Projects/.Net Core/BlazorEcommerce/BlazorEcommerce/Client/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-a2ol7x5grl
+
+[F:/Projects/.Net Core/BlazorEcommerce/BlazorEcommerce/Client/Shared/AdminMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFkbWluTWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-1zvt91rzix
 
 [F:/Projects/.Net Core/BlazorEcommerce/BlazorEcommerce/Client/Shared/FeaturedProducts.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEZlYXR1cmVkUHJvZHVjdHMucmF6b3I=

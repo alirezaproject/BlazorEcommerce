@@ -1,0 +1,25 @@
+.big-checkbox[b-puhdt2637c] {
+    transform: scale(2, 2);
+}
+
+.header[b-puhdt2637c] {
+    display: flex;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+}
+
+.row[b-puhdt2637c] {
+    display: flex;
+    padding: 6px;
+}
+
+.col[b-puhdt2637c] {
+    flex: 1;
+}
+
+.col-visible[b-puhdt2637c] {
+    text-align: center;
+}
