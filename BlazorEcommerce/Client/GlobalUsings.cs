@@ -9,3 +9,4 @@ global using BlazorEcommerce.Client.Services.AuthService;
 global using Microsoft.AspNetCore.Components.Authorization;
 global using BlazorEcommerce.Client.Services.OrderService;
 global using BlazorEcommerce.Client.Services.AddressService;
+global using BlazorEcommerce.Client.Services.ProductTypeService;

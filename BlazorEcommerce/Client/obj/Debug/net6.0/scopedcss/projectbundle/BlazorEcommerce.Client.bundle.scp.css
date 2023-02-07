@@ -24,6 +24,15 @@
 .col-visible[b-puhdt2637c] {
     text-align: center;
 }
+/* /Pages/Admin/ProductTypes.razor.rz.scp.css */
+.row[b-csx47llx4i] {
+    display: flex;
+    padding: 6px;
+}
+
+.col[b-csx47llx4i] {
+    flex: 1;
+}
 /* /Pages/Cart.razor.rz.scp.css */
 .container[b-3b5rf2ockk]
 {
