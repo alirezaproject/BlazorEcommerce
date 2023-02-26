@@ -68,6 +68,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcmllcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-puhdt2637c
 
+[F:/Projects/.Net Core/BlazorEcommerce/BlazorEcommerce/Client/Pages/Admin/EditProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdFByb2R1Y3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4mok10gb40
+
+[F:/Projects/.Net Core/BlazorEcommerce/BlazorEcommerce/Client/Pages/Admin/Products.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-31vej7wq1l
+
 [F:/Projects/.Net Core/BlazorEcommerce/BlazorEcommerce/Client/Pages/Admin/ProductTypes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdFR5cGVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-csx47llx4i

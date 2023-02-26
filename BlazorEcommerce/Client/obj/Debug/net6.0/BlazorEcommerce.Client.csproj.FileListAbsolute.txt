@@ -864,3 +864,5 @@ F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\sc
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\AdminMenu.razor.rz.scp.css
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\Admin\Categories.razor.rz.scp.css
 F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\Admin\ProductTypes.razor.rz.scp.css
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\Admin\Products.razor.rz.scp.css
+F:\Projects\.Net Core\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\Admin\EditProduct.razor.rz.scp.css

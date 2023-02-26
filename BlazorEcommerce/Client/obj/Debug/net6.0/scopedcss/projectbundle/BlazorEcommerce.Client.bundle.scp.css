@@ -24,6 +24,39 @@
 .col-visible[b-puhdt2637c] {
     text-align: center;
 }
+/* /Pages/Admin/EditProduct.razor.rz.scp.css */
+img[b-4mok10gb40] {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.row[b-4mok10gb40] {
+    display: flex;
+    padding: 6px;
+}
+
+
+.col[b-4mok10gb40] {
+    flex: 1;
+}
+
+.header[b-4mok10gb40] {
+    display: flex;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+}
+
+.col-visible[b-4mok10gb40] {
+    text-align: center;
+}
+/* /Pages/Admin/Products.razor.rz.scp.css */
+img[b-31vej7wq1l] {
+    max-height: 100px;
+    max-width: 100px;
+}
 /* /Pages/Admin/ProductTypes.razor.rz.scp.css */
 .row[b-csx47llx4i] {
     display: flex;

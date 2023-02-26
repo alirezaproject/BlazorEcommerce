@@ -1,0 +1,27 @@
+img[b-4mok10gb40] {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.row[b-4mok10gb40] {
+    display: flex;
+    padding: 6px;
+}
+
+
+.col[b-4mok10gb40] {
+    flex: 1;
+}
+
+.header[b-4mok10gb40] {
+    display: flex;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+}
+
+.col-visible[b-4mok10gb40] {
+    text-align: center;
+}

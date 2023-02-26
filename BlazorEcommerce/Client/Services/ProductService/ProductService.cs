@@ -13,10 +13,11 @@ public class ProductService : IProductService
 
     public event Action ProductChanged = null!;
     public List<Product> Products { get; set; } = new();
+    public List<Product> AdminProduct { get; set; } = new();
     public string Message { get; set; } = "Loading Products ...";
     public int CurrentPage { get; set; }
     public int PageCount { get; set; }
-    public string LastSearchText { get; set; } =string.Empty;
+    public string LastSearchText { get; set; } = string.Empty;
 
     public async Task GetProducts(string categoryUrl = "")
     {
@@ -49,7 +50,7 @@ public class ProductService : IProductService
         return result!;
     }
 
-    public async Task SearchProducts(string searchText,int page)
+    public async Task SearchProducts(string searchText, int page)
     {
         LastSearchText = searchText;
         var result =
@@ -75,5 +76,36 @@ public class ProductService : IProductService
         var result = await _httpClient.GetFromJsonAsync<ServiceResponse<List<string>>>($"api/Product/searchSuggestions/{searchText}");
 
         return result?.Data!;
+    }
+
+    public async Task GetAdminProducts()
+    {
+        var result = await _httpClient.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/Product/admin");
+
+        AdminProduct = result?.Data!;
+        CurrentPage = 1;
+        PageCount = 0;
+        if (AdminProduct.Count == 0)
+            Message = "No Products Found";
+
+    }
+
+    public async Task<Product> CreateProduct(Product product)
+    {
+        var result = await _httpClient.PostAsJsonAsync("api/Product", product);
+        var newProduct = (await result.Content.ReadFromJsonAsync<ServiceResponse<Product>>())?.Data!;
+
+        return newProduct;
+    }
+
+    public async Task<Product> UpdateProduct(Product product)
+    {
+        var result = await _httpClient.PutAsJsonAsync("api/Product", product);
+        return (await result.Content.ReadFromJsonAsync<ServiceResponse<Product>>())?.Data!;
+    }
+
+    public async Task DeleteProduct(Product product)
+    {
+        var result = await _httpClient.DeleteAsync($"api/Product/{product.Id}");
     }
 }
